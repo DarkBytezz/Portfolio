@@ -1,0 +1,250 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+::selection {
+    background-color: transparent;
+}
+
+header {
+    background-image: url(media/615e21cb2c45d0327ec6940d_hero1.jpg);
+    /* background-image: url(media/Lightmode.png); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    z-index: 0;
+
+
+}
+
+.logo {
+    position: absolute;
+    z-index: 100;
+    margin-left: 10rem;
+    padding-top: 15px;
+}
+
+.top {
+    position: sticky;
+    top: 10px;
+    z-index: 5;
+    margin-left: 4rem;
+
+}
+
+nav {
+    position: absolute;
+    width: 90vw;
+    padding-top: 10px;
+    z-index: 50;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    display: flex;
+    gap: 25px;
+    background-color: rgba(0, 0, 0, 0.377);
+    backdrop-filter: blur(8px);
+    height: 10vh;
+    width: 500px;
+    border-radius: 1rem;
+    padding-right: 40px;
+}
+
+li:hover {
+    transition: ease-in-out 0.2s;
+    transform: translateY(-7px);
+}
+
+li a:hover {
+    color: rgb(245, 245, 194);
+}
+
+li a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1.5em;
+
+}
+
+
+.main-content h1 {
+    position: absolute;
+    z-index: 5;
+    top: 15rem;
+    margin-left: 10rem;
+    color: rgb(98, 149, 193);
+    font-size: 4rem;
+    animation: zoomInOut 1s infinite alternate;
+    cursor: default;
+
+}
+
+
+
+@keyframes zoomInOut {
+    0% {
+        transform: scale(1.1);
+        color: rgba(87, 87, 87, 0.99);
+
+    }
+
+    100% {
+        transform: scale(1.2);
+        color: aliceblue
+    }
+}
+
+    span {
+    font-size: 2rem;
+    z-index: 5;
+    position: absolute;
+    z-index: 5;
+    top: 25rem;
+    margin-left: 8rem;
+    cursor: default;
+    color: aliceblue;
+    text-shadow: 1px 2px 10px rgb(255, 217, 0);
+}
+
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        /* Start with text hidden */
+    }
+
+    50% {
+        opacity: 1;
+        /* Fade in text */
+    }
+
+    100% {
+        opacity: 0;
+        /* Fade out text */
+    }
+}
+
+
+
+
+
+
+.main-content a {
+    position: absolute;
+    bottom: 3rem;
+    right: 3rem;
+    font-size: 1.5rem;
+}
+
+.margin {
+    background-color: rgb(64, 64, 64);
+    height: 15px;
+}
+
+
+.down-button :hover {
+    transition: ease-in-out 0.2s;
+    transform: scale(1.5);
+
+}
+
+/* For Webkit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 10px;
+    /* width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #414141;
+    /* color of the track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #555;
+    /* color of the thumb */
+    border-radius: 10px;
+    /* roundness of the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* color of the thumb on hover */
+}
+
+.iconpack {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 50vw;
+    margin-left: 8rem;
+    gap: 25px;
+    position: absolute;
+    top: 31rem;
+}
+
+.iconpack .icon {
+    transition: all 0.2s ease-in-out;
+    /* Smooth transition */
+}
+
+/* Hover effect */
+.iconpack .icon:hover {
+    color: #696969;
+    /* Change color on hover */
+    transform: translateY(-5px);
+    /* Zoom in slightly on hover */
+    box-shadow: 1px 8px 10px;
+}
+
+.CV {
+    position: absolute;
+    top: 37rem;
+    left: 8rem;
+}
+
+.CV button {
+    height: 60px;
+    width: 280px;
+    font-size: x-large;
+    border-radius: 5rem;
+    background-color: rgba(240, 248, 255, 0);
+    color: aliceblue;
+    font-weight: 600;
+    box-shadow: 13px 6px 20px 7px rgb(0, 0, 0);
+    transition: box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.CV button:hover {
+    box-shadow: none;
+}
+
+#skills {
+    background-image: url(media/microsoft-design-3840x2160-10782.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
